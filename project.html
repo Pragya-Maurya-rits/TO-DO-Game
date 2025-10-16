@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task..." />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="project.js"></script>
+</body>
+</html>
+    <style> 
+        body {
+  font-family: Arial, sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ background-image:url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg");
+  background-size: cover;                 
+  background-position: fixed; 
+}
+
+.container {
+  background:linear-gradient(#bed0ec,#f7ebeb,#949292,#e8eef7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 56px;
+  box-shadow:0 56 34px ;
+  cursor: pointer;
+} 
+
+
+
+
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+  border-radius: 40px;
+ 
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  margin-top: 5px;
+  background: #e2e2e2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+    </style>
+</head>
